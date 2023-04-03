@@ -59,8 +59,6 @@ class MyApp extends StatelessWidget {
       Flexible(
         flex: 2,
           child: Container(
-            // margin: const EdgeInsets.all(5.0),
-            // height: 50,
             width: 50,
             color: Colors.orange,
             alignment: Alignment.center,
