@@ -22,63 +22,6 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('App Title'),
         ),
-
-        // body: containerLesson(),
-        // body: Container(
-        //   color: Colors.blueGrey,
-        //   // width: ,
-        //   height: 500,
-        //   child: Column(
-        //   mainAxisSize: MainAxisSize.min,
-        //   // mainAxisAlignment: MainAxisAlignment.spaceAround,
-        //   crossAxisAlignment: CrossAxisAlignment.end,
-        //   children: [
-        //     Container(
-        //       width: 70,
-        //       height: 100,
-        //       color: Colors.orange,
-        //       child: const Text('Container 1'),
-        //     ),
-        //     Container(
-        //       width: 70,
-        //       height: 100,
-        //       color: Colors.orange,
-        //       child: const Text('Container 2'),
-        //     ),
-        //     Container(
-        //       width: 70,
-        //       height: 100,
-        //       color: Colors.orange,
-        //       child: const Text('Container 3'),
-        //     )
-        //   ]
-        // ),
-        //   /*Row(
-        //     mainAxisAlignment: MainAxisAlignment.spaceAround,
-        //     mainAxisSize: MainAxisSize.max,
-        //     crossAxisAlignment: CrossAxisAlignment.end,
-        //     children: [
-        //       Container(
-        //         width: 70,
-        //         height: 100,
-        //         color: Colors.green,
-        //         child: const Text('Container 1'),
-        //       ),
-        //       Container(
-        //         width: 70,
-        //         height: 100,
-        //         color: Colors.green,
-        //         child: const Text('Container 1'),
-        //       ),
-        //       Container(
-        //         width: 70,
-        //         height: 100,
-        //         color: Colors.green,
-        //         child: const Text('Container 1'),
-        //       )
-        //     ],
-        //   )*/
-        // ),
         body: Container(
           margin: const EdgeInsets.all(5.0),
           child: Column(
@@ -97,99 +40,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  List<Widget> overFlowProblem() {
-    return [
-      Container(
-        width: 100,
-        height: 100,
-        color: Colors.blue,
-      ),
-      Container(
-        width: 100,
-        height: 100,
-        color: Colors.red,
-      ),
-      Container(
-        width: 100,
-        height: 100,
-        color: Colors.green,
-      ),
-      Container(
-        width: 100,
-        height: 100,
-        color: Colors.orange,
-      ),
-      Container(
-        width: 100,
-        height: 100,
-        color: Colors.pink,
-      ),
-    ];
-  }
-
-  List<Widget> overflowSolutionWithExpanded() {
-    return [
-      Expanded(
-        flex: 3,
-        child: Container(
-          width: 50,
-          height: 100,
-          color: Colors.blue,
-        ),
-      ),
-      Expanded(
-        flex: 5,
-        child: Container(
-          width: 50,
-          height: 100,
-          color: Colors.red,
-        ),
-      ),
-      Expanded(
-        child: Container(
-          width: 50,
-          height: 100,
-          color: Colors.green,
-        ),
-      ),
-      Expanded(
-        child: Container(
-          width: 50,
-          height: 100,
-          color: Colors.orange,
-        ),
-      ),
-      Expanded(
-        child: Container(
-          width: 50,
-          height: 100,
-          color: Colors.pink,
-        ),
-      )
-    ];
-  }
-
-  List<Widget> overflowSolutionWithFlexible() {
-    return [
-      Flexible(
-        fit: FlexFit.tight,
-        child: Container(
-          // width: 800,
-          height: 100,
-          color: Colors.blue,
-        ),
-      ),
-      Flexible(
-        fit: FlexFit.loose,
-        child: Container(
-          width: 100,
-          height: 100,
-          color: Colors.red,
-        ),
-      ),
-    ];
   }
 
   List<Widget> oneRowOneColumn() {
@@ -234,11 +84,9 @@ class MyApp extends StatelessWidget {
     );
   }
 
-
   Flexible flexibleContainer(Color color, String text) {
     return Flexible(
       child: Container(
-        // margin: const EdgeInsets.all(5.0),
         height: 50,
         width: 50,
         color: color,
@@ -248,15 +96,10 @@ class MyApp extends StatelessWidget {
     );
   }
 
-
   Widget containerLesson() {
     return Center(
       child: Container(
         padding: const EdgeInsets.all(20),
-        // color: Colors.blueGrey,
-        /*child: const FlutterLogo(
-          size: 120,
-        ),*/
         width: 300,
         height: 200,
         decoration: BoxDecoration(
@@ -273,8 +116,6 @@ class MyApp extends StatelessWidget {
           ),
           boxShadow: const [
             BoxShadow(
-              // blurStyle: BlurStyle.solid,
-              // spreadRadius: 1.0,
               color: Colors.amber,
               blurRadius: 30.0,
               offset: Offset(-6, 10)
